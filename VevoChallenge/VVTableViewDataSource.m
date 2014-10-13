@@ -35,10 +35,10 @@
 
 - (void)loadFeed {
     
-    NSString *mapURL = @"http://gdata.youtube.com/feeds/api/videos";
+    NSString *feedURL = @"http://gdata.youtube.com/feeds/api/videos";
     
     NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:mapURL]
+    [[session dataTaskWithURL:[NSURL URLWithString:feedURL]
             completionHandler:^(NSData *data,
                                 NSURLResponse *response,
                                 NSError *error) {
@@ -47,16 +47,19 @@
                     NSLog(@"error obtaining feed");
                 }
                 else {
-                    
                     __weak VVTableViewDataSource *weakSelf = self;
-                    
                     dispatch_async(dispatch_get_main_queue(), ^{
                         [weakSelf parseData:data];
                     });
-                    
                 }
                 
             }] resume];
+}
+
+
+- (NSString *)videoURLAtIndex:(NSIndexPath *)indexPath {
+    NSDictionary *item = self.videos[indexPath.row];
+    return item[@"videoURL"];
 }
 
 
@@ -108,10 +111,8 @@
 }
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
-    
     NSString *errorString = [NSString stringWithFormat:@"Error code %i", [parseError code]];
     NSLog(@"Error parsing XML: %@", errorString);
-
 }
 
 

@@ -15,4 +15,6 @@
 
 - (void)loadFeed;
 
+- (NSString *)videoURLAtIndex:(NSIndexPath *)indexPath;
+
 @end

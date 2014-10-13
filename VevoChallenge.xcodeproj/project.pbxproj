@@ -15,6 +15,7 @@
 		6C2A0D1119EB49C60069D068 /* VVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A0D1019EB49C60069D068 /* VVTableViewController.m */; };
 		6C2A0D1419EB4BE50069D068 /* VVTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A0D1319EB4BE50069D068 /* VVTableViewCell.m */; };
 		6C2A0D1719EB57920069D068 /* VVTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A0D1619EB57920069D068 /* VVTableViewDataSource.m */; };
+		6C2A0D1A19EB9E700069D068 /* VVVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A0D1919EB9E700069D068 /* VVVideoPlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		6C2A0D1319EB4BE50069D068 /* VVTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTableViewCell.m; sourceTree = "<group>"; };
 		6C2A0D1519EB57920069D068 /* VVTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTableViewDataSource.h; sourceTree = "<group>"; };
 		6C2A0D1619EB57920069D068 /* VVTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTableViewDataSource.m; sourceTree = "<group>"; };
+		6C2A0D1819EB9E700069D068 /* VVVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVVideoPlayerViewController.h; sourceTree = "<group>"; };
+		6C2A0D1919EB9E700069D068 /* VVVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVVideoPlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				6C2A0D1619EB57920069D068 /* VVTableViewDataSource.m */,
 				6C2A0D0F19EB49C60069D068 /* VVTableViewController.h */,
 				6C2A0D1019EB49C60069D068 /* VVTableViewController.m */,
+				6C2A0D1819EB9E700069D068 /* VVVideoPlayerViewController.h */,
+				6C2A0D1919EB9E700069D068 /* VVVideoPlayerViewController.m */,
 				6C2A0CF619EB485C0069D068 /* Images.xcassets */,
 				6C2A0CF819EB485C0069D068 /* LaunchScreen.xib */,
 				6C2A0CE919EB485C0069D068 /* Supporting Files */,
@@ -230,6 +235,7 @@
 				6C2A0D1119EB49C60069D068 /* VVTableViewController.m in Sources */,
 				6C2A0D1419EB4BE50069D068 /* VVTableViewCell.m in Sources */,
 				6C2A0D1719EB57920069D068 /* VVTableViewDataSource.m in Sources */,
+				6C2A0D1A19EB9E700069D068 /* VVVideoPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
