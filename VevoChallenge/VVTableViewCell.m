@@ -48,7 +48,7 @@
 
 - (void)setThumbURL:(NSString *)thumbURL {
     _thumbURL = thumbURL;
-    //dispatch_queue_t = queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul);
+
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:[NSURL URLWithString:_thumbURL]
             completionHandler:^(NSData *data,

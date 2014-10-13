@@ -42,7 +42,6 @@
     NSLog(@"feedString: %@", feedString);
     NSURL *feedURL = [NSURL URLWithString:feedString];
     
-    
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:feedURL
             completionHandler:^(NSData *data,
