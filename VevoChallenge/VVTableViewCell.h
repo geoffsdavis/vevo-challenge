@@ -13,5 +13,7 @@
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *viewCountLabel;
 @property (nonatomic, strong) UIImageView *thumbView;
+@property (nonatomic, strong) NSString *thumbURL;
+@property (nonatomic, strong) NSString *videoURL;
 
 @end
