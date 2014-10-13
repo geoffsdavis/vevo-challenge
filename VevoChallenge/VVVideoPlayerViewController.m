@@ -34,6 +34,11 @@
     [self.webView loadRequest:request];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.webView = nil;
+}
+
 
 
 - (void)didReceiveMemoryWarning {

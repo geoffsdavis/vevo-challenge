@@ -35,10 +35,16 @@
 
 - (void)loadFeed {
     
-    NSString *feedURL = @"http://gdata.youtube.com/feeds/api/videos";
+    NSString *baseString = @"http://gdata.youtube.com/feeds/api/videos";
+    NSNumber *start = [NSNumber numberWithInt:1];
+    NSNumber *max = [NSNumber numberWithInt:50];
+    NSString *feedString = [NSString stringWithFormat:@"%@?q=start-index=%@&max-results=%@", baseString, start.stringValue, max.stringValue];
+    NSLog(@"feedString: %@", feedString);
+    NSURL *feedURL = [NSURL URLWithString:feedString];
+    
     
     NSURLSession *session = [NSURLSession sharedSession];
-    [[session dataTaskWithURL:[NSURL URLWithString:feedURL]
+    [[session dataTaskWithURL:feedURL
             completionHandler:^(NSData *data,
                                 NSURLResponse *response,
                                 NSError *error) {

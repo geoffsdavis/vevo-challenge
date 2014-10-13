@@ -31,12 +31,8 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
-
-#pragma mark - Table view data source
-
-
 
 
 
@@ -49,7 +45,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *videoURL = [self.dataSource videoURLAtIndex:indexPath];
-    NSLog(@"select: %@", videoURL);
     VVVideoPlayerViewController *videoPlayerVC = [[VVVideoPlayerViewController alloc] init];
     videoPlayerVC.videoURL = videoURL;
     [self.navigationController pushViewController:videoPlayerVC animated:YES];
