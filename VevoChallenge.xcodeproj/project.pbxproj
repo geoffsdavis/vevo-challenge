@@ -14,6 +14,7 @@
 		6C2A0D0619EB485C0069D068 /* VevoChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A0D0519EB485C0069D068 /* VevoChallengeTests.m */; };
 		6C2A0D1119EB49C60069D068 /* VVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A0D1019EB49C60069D068 /* VVTableViewController.m */; };
 		6C2A0D1419EB4BE50069D068 /* VVTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A0D1319EB4BE50069D068 /* VVTableViewCell.m */; };
+		6C2A0D1719EB57920069D068 /* VVTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A0D1619EB57920069D068 /* VVTableViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		6C2A0D1019EB49C60069D068 /* VVTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTableViewController.m; sourceTree = "<group>"; };
 		6C2A0D1219EB4BE50069D068 /* VVTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTableViewCell.h; sourceTree = "<group>"; };
 		6C2A0D1319EB4BE50069D068 /* VVTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTableViewCell.m; sourceTree = "<group>"; };
+		6C2A0D1519EB57920069D068 /* VVTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTableViewDataSource.h; sourceTree = "<group>"; };
+		6C2A0D1619EB57920069D068 /* VVTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTableViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				6C2A0CEE19EB485C0069D068 /* AppDelegate.m */,
 				6C2A0D1219EB4BE50069D068 /* VVTableViewCell.h */,
 				6C2A0D1319EB4BE50069D068 /* VVTableViewCell.m */,
+				6C2A0D1519EB57920069D068 /* VVTableViewDataSource.h */,
+				6C2A0D1619EB57920069D068 /* VVTableViewDataSource.m */,
 				6C2A0D0F19EB49C60069D068 /* VVTableViewController.h */,
 				6C2A0D1019EB49C60069D068 /* VVTableViewController.m */,
 				6C2A0CF619EB485C0069D068 /* Images.xcassets */,
@@ -224,6 +229,7 @@
 				6C2A0CEC19EB485C0069D068 /* main.m in Sources */,
 				6C2A0D1119EB49C60069D068 /* VVTableViewController.m in Sources */,
 				6C2A0D1419EB4BE50069D068 /* VVTableViewCell.m in Sources */,
+				6C2A0D1719EB57920069D068 /* VVTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

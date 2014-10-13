@@ -8,8 +8,11 @@
 
 #import "VVTableViewController.h"
 #import "VVTableViewCell.h"
+#import "VVTableViewDataSource.h"
 
 @interface VVTableViewController ()
+
+@property (nonatomic, strong) VVTableViewDataSource* dataSource;
 
 @end
 
@@ -17,10 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor blackColor];
-
+    
+    self.dataSource = [[VVTableViewDataSource alloc] initWithTableView:self.tableView];
+    [self.dataSource loadFeed];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -29,23 +35,7 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *cellIdentifier = @"VideoCell";
-    [tableView registerClass:[VVTableViewCell class] forCellReuseIdentifier:cellIdentifier];
-    VVTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-
-    return cell;
-}
 
 
 

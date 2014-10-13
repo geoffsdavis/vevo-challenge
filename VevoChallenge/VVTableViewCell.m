@@ -16,19 +16,19 @@
         
         self.backgroundColor = [UIColor blackColor];
 
-        UILabel *mainLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 10, 200, 40)];
-        mainLabel.textColor = [UIColor whiteColor];
-        [self addSubview:mainLabel];
-        mainLabel.text = @"test";
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 10, 600, 40)];
+        _titleLabel.textColor = [UIColor whiteColor];
+        [self addSubview:_titleLabel];
+        _titleLabel.text = @"";
         
-        UILabel *viewCoutLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 50, 200, 40)];
-        viewCoutLabel.textColor = [UIColor whiteColor];
-        [self addSubview:viewCoutLabel];
-        viewCoutLabel.text = @"Number of Views: ";
+        _viewCountLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 50, 300, 40)];
+        _viewCountLabel.textColor = [UIColor whiteColor];
+        [self addSubview:_viewCountLabel];
+        _viewCountLabel.text = @"";
 
-        UIImageView *thumbView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 10, 60, 60)];
-        thumbView.backgroundColor = [UIColor grayColor];
-        [self addSubview:thumbView];
+        _thumbView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 10, 60, 60)];
+        _thumbView.backgroundColor = [UIColor grayColor];
+        [self addSubview:_thumbView];
         
     }
     return self;

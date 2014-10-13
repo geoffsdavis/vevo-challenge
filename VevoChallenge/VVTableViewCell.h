@@ -10,4 +10,8 @@
 
 @interface VVTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *viewCountLabel;
+@property (nonatomic, strong) UIImageView *thumbView;
+
 @end
